@@ -1,17 +1,22 @@
-package deduplication;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-class App {
-
+public class app {
   public static void main(String[] args) {
-    String message = Stream
-      .of("Hello", "World", "!")
-      .map(String::toUpperCase)
-      .collect(Collectors.joining(" "));
+    Set<Book> set = new LinkedHashSet<Book>();
 
-    System.out.println(message);
+    Book book1 = new Book("1000", "Outliers", "Malcon Gladwell");
+    Book book2 = new Book("1000", "Outliers", "Malcon Gladwell");
+    Book book3 = new Book("1001", "John Grisham", "Time to Kill");
+
+
+    set.add(book1);
+    set.add(book2);
+    set.add(book3);
+
+    for (Book s : set) {
+      System.out.println(s.bookId + ", " + s.bookName + ", " + s.author);
+    }
   }
-
 }
