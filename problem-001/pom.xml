@@ -11,7 +11,7 @@
     <project.encoding>UTF-8</project.encoding>
     <project.build.sourceEncoding>${project.encoding}</project.build.sourceEncoding>
     <project.resources.sourceEncoding>${project.encoding}</project.resources.sourceEncoding>
-    <jdk.version>1.8</jdk.version>
+    <jdk.version>1.7</jdk.version>
   </properties>
 
   <dependencies>
