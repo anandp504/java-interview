@@ -1,7 +1,7 @@
-package deduplication;
+package org.sanketika.de_duplication;
 
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.LinkedHashSet;
 
 
