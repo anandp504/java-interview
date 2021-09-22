@@ -2,16 +2,25 @@ package shapes;
 
 public class Square extends Shapes{
 
+    double side;
+    Square(){
+        super();
+    }
+
+    Square(double side){
+        super();
+        this.side = side;
+    }
     @Override
-    protected int perimeter() {
+    double perimeter() {
         
-        return 4*length;
+        return 4*side;
         
     }
 
     @Override
-    protected int area() {
-        return length * length;
+    double area() {
+        return side * side;
     }
     
 }

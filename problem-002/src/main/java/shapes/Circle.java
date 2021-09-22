@@ -2,20 +2,32 @@ package shapes;
 
 public class Circle extends Shapes {
 
+    double radius;
+
+    Circle(double radius){
+        super();
+        this.radius = radius;
+    }
+
+    Circle(){
+        super();
+    }
+    
     @Override
-    protected int perimeter() {
+    double perimeter() {
+        
         
         Float pi = 3.14f;
 
-        return (int) (2 * pi * length);
+        return (int) (2 * pi * radius);
         
     }
 
     @Override
-    protected int area() {
+     double area() {
         
         Float pi = 3.14f;
-        return (int) (pi * length * length);
+        return (int) (pi * radius * radius);
     }
     
 }

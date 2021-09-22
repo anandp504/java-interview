@@ -2,16 +2,27 @@ package shapes;
 
 public class Rectangle extends Shapes{
 
-    int breadth = 1;
+    double breadth;
+    double length;
+    
+    Rectangle(){
+        super();
+    }
+
+    Rectangle(double length, double breadth){
+        super();
+        this.breadth = breadth;
+        this.length = length;
+    }
     
     @Override
-    protected int perimeter() {
+    double perimeter() {
         
         return 2*(length + breadth);
     }
 
     @Override
-    protected int area() {
+    double area() {
         
         return length * breadth;
         

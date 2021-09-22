@@ -5,12 +5,12 @@ public class App
     public static void main( String[] args )
     {
         Shapes shape[] = new Shapes[3];
-        shape[0] = new Rectangle();
-        shape[1] = new Square();
-        shape[2] = new Circle();
+        shape[0] = new Rectangle(1,1);
+        shape[1] = new Square(1);
+        shape[2] = new Circle(3);
 
         
-        computeProperties(shape[0]);
+        computeProperties(shape[2]);
         
     }
 
