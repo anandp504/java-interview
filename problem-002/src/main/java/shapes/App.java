@@ -1,17 +1,23 @@
-package deduplication;
+package shapes;
 
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
+public class App 
+{
+    public static void main( String[] args )
+    {
+        Shapes shape[] = new Shapes[3];
+        shape[0] = new Rectangle(1,1);
+        shape[1] = new Square(1);
+        shape[2] = new Circle(3);
 
-class App {
+        
+        computeProperties(shape[2]);
+        
+    }
 
-  public static void main(String[] args) {
-    String message = Stream
-      .of("Hello", "World", "!")
-      .map(String::toUpperCase)
-      .collect(Collectors.joining(" "));
-
-    System.out.println(message);
-  }
-
+    public static void computeProperties(Shapes shape)
+    {
+        System.out.println("Area : "+shape.area());
+    	System.out.println("Perimeter : "+ shape.perimeter());
+    	
+    }   
 }
