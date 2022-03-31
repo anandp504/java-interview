@@ -15,10 +15,12 @@ This problem expects an implementation using Java's object oriented programming 
 2. A sample Class and a Test Class has been provided (App.java and AppTest.java).
 3. Create a Book class with String bookId, String bookName and String author fields.
 4. In the App.java, create multiple Book objects with the following values.
+  ```
   BookID, BookName, Author
   1000, Outliers, Malcom Gladwell
   1000, Outliers, Malcom Gladwell
   1001, John Grisham, Time to Kill
+  ```
 5. Add the Book objects to a java.util.Set
 6. Print the contents of the java.util.Set
 
